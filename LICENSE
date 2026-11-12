@@ -1,0 +1,28 @@
+Island Timer - Copyright (c) 2026 screw. All rights reserved.
+
+This repository publishes ONLY the compiled program (IslandTimer.exe) in its
+Releases. The source code is not published and is not licensed to you.
+
+You MAY:
+  - download and run the unmodified IslandTimer.exe from the official Releases
+    page of this repository for personal, non-commercial use;
+  - share a link to this repository.
+
+You MAY NOT, without written permission from the author:
+  - modify, patch, hex-edit, repackage or rebrand the program;
+  - decompile, disassemble or reverse engineer it, or create derivative works
+    or similar programs from its code, assets, design or text;
+  - redistribute the program (modified or not) anywhere other than as a link
+    to the official Releases page, or sell it;
+  - alter, remove or replace the author's name, signature or the donation
+    links and wallet addresses shown in the program.
+
+Only files downloaded from the official Releases page of this repository are
+genuine. Any copy with different wallet addresses or a different SHA-256 hash
+is a counterfeit and is not distributed or endorsed by the author.
+
+THE PROGRAM IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. THE AUTHOR IS
+NOT LIABLE FOR ANY DAMAGE ARISING FROM ITS USE.
+
+Island Timer is an independent project and is not affiliated with, endorsed
+by or sponsored by Apple Inc.
