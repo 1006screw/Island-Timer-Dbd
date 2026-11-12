@@ -8,6 +8,18 @@ Made by **screw** · Discord: `screw_xgod`
 
 > Source code is **not** published. Only the compiled program is available in [Releases](../../releases). See [LICENSE](LICENSE).
 
+## Screenshots
+
+| Collapsed island with a GIF / photo | Expanded island with music |
+|---|---|
+| ![Collapsed island with a GIF](screenshot-collapsed-gif.png) | ![Expanded island with music](screenshot-expanded-music.png) |
+
+| Timer in a game | Timer moved to the corner |
+|---|---|
+| ![Timer in a game](screenshot-timer-in-game.png) | ![Timer in the corner of the screen](screenshot-timer-corner.png) |
+
+![Timer settings](screenshot-settings-timer.png)
+
 ## Features
 
 - **Clock pill.** A compact pill with the time. Hover it and it expands: big clock, date, battery and the track that is playing. You can drag it anywhere on the screen, resize it and change its color and opacity. Choose how it expands: on hover, with a delay, on click, or only by hotkey / from the tray. A game guard keeps it closed when you accidentally hover it while a fullscreen game is focused.
