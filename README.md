@@ -25,13 +25,15 @@ Made by **screw** · Discord: `screw_xgod`
 - **Clock pill.** A compact pill with the time. Hover it and it expands: big clock, date, battery and the track that is playing. You can drag it anywhere on the screen, resize it and change its color and opacity. Choose how it expands: on hover, with a delay, on click, or only by hotkey / from the tray. A game guard keeps it closed when you accidentally hover it while a fullscreen game is focused.
 - **Music.** Shows what is playing in the system media player (browsers such as YouTube, Spotify, VLC and other players): title, artist, cover, seek bar and play / pause / next / previous and a volume slider. Playback from Telegram is ignored on purpose.
 - **Live stream mode.** Optional: the collapsed island gets a bit bigger and shows the track title and artist under the timer.
-- **Fonts and colors.** Choose the font of the island, of the timer digits and of the settings window; set the island text color (the timer has its own colors) and turn on text glow for readability on photos.
+- **Fonts and colors.** Choose the font of the island, of the timer digits and of the settings window (or load your own .ttf / .otf file); set the island text color (the timer has its own colors) and turn on text glow for readability on photos.
 - **GIF or photo in the pill.** Put your own GIF or image on the collapsed island. Optional dimming while the timer is shown.
 - **Timers.**
   - **Solo timer**: a regular stopwatch with start / stop / reset.
   - **Ladder mode**: two timers for a 1 vs 1 game (for example your chase time and your opponent's in Dead by Daylight). The selected timer is highlighted, each timer has its own color, and when a running timer gets within N seconds of the other one, its digits change color. A hotkey switches between timer 1 and 2, and "pass the turn" can start the next timer automatically.
 - **Global hotkeys.** Work in any window, including games. Single keys without Ctrl / Alt (like F9 or NumPad) are allowed, and the key still reaches the game by default.
 - **Settings window.** Themes (light, dark, AMOLED black, midnight, purple, or your own colors), background image or GIF, language, autostart with Windows, always on top, and more.
+- **Reset.** Settings -> General -> *Reset all settings* returns every option to its default (after a confirmation).
+- **Update history.** A small paper button in the settings window shows what changed in each version.
 - **Built-in video guide** with English subtitles (Settings → Guide). It is shown automatically on the very first launch as a ▶ button on the island.
 - **Updates.** Settings → About → *Check for updates*. The program only downloads releases from this repository and checks their SHA-256 before installing.
 - **Languages:** English, Français, Português, Русский, Español, العربية, 中文, Deutsch, Srpski, 한국어, 日本語.
@@ -70,7 +72,7 @@ The hash must match the one in the release notes of the version you downloaded. 
 Current `IslandTimer.exe` SHA-256:
 
 ```
-6EDD67112F2DE820A133EB30DCA4752B703BB9973B855EDF948A20456183B13D
+28AB2C375F1EC18565E06B6BA50D9399C7E5D3E2861C0A2354D56E700466C7B6
 ```
 
 (The hash changes with every release; the release notes always list the current one.)
