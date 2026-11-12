@@ -72,7 +72,7 @@ The hash must match the one in the release notes of the version you downloaded. 
 Current `IslandTimer.exe` SHA-256:
 
 ```
-9C65A760DEE77BE59B8611F629962A081BABF69F562696B5855B657905D48D76
+B639302E6BB7332AA8268816C90EECB5100E137F7F968933000E74D072D24E50
 ```
 
 (The hash changes with every release; the release notes always list the current one.)
