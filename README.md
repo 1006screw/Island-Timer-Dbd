@@ -1,6 +1,6 @@
 # Island Timer
 
-A small floating "island" for Windows 10/11 that sits at the top of your screen: clock, music with covers, notifications, a GIF or photo in the pill, and a stopwatch with **Solo timer** and **Ladder mode** (two timers for 1 vs 1 games like Dead by Daylight).
+A small floating "island" for Windows 10/11 that sits at the top of your screen: clock, music with covers, a GIF or photo in the pill, and a stopwatch with **Solo timer** and **Ladder mode** (two timers for 1 vs 1 games like Dead by Daylight).
 
 Portable, no installation, tiny (about 60 MB of RAM and almost no CPU while idle), 11 languages.
 
@@ -23,8 +23,9 @@ Made by **screw** · Discord: `screw_xgod`
 ## Features
 
 - **Clock pill.** A compact pill with the time. Hover it and it expands: big clock, date, battery and the track that is playing. You can drag it anywhere on the screen, resize it and change its color and opacity. Choose how it expands: on hover, with a delay, on click, or only by hotkey / from the tray. A game guard keeps it closed when you accidentally hover it while a fullscreen game is focused.
-- **Music.** Shows what is playing in the system media player (browsers such as YouTube, Spotify, VLC and other players): title, artist, cover, seek bar and play / pause / next / previous. Playback from Telegram is ignored on purpose.
-- **Notifications.** Windows notifications can pop up on the island (off by default, turn on in Settings).
+- **Music.** Shows what is playing in the system media player (browsers such as YouTube, Spotify, VLC and other players): title, artist, cover, seek bar and play / pause / next / previous and a volume slider. Playback from Telegram is ignored on purpose.
+- **Live stream mode.** Optional: the collapsed island gets a bit bigger and shows the track title and artist under the timer.
+- **Fonts and colors.** Choose the font of the island, of the timer digits and of the settings window; set the island text color (the timer has its own colors) and turn on text glow for readability on photos.
 - **GIF or photo in the pill.** Put your own GIF or image on the collapsed island. Optional dimming while the timer is shown.
 - **Timers.**
   - **Solo timer**: a regular stopwatch with start / stop / reset.
@@ -46,11 +47,13 @@ Get `Island-Timer-by-screw.zip` **only from the Releases page of this repository
 | Expand / collapse | Hover the island (or click the tray icon) |
 | Open settings or close | Right-click the island or the tray icon |
 | Move the island | Drag it with the left mouse button (can be locked in Settings) |
-| Start / stop / reset the timer | `Ctrl+Alt+F9` |
+| Start / stop / reset the timer (works in Solo and Ladder mode) | `Ctrl+Alt+F9` |
 | Turn the timer off (show the clock again) | `Ctrl+Alt+F10` |
 | Reset the timer | `Ctrl+Alt+F11` |
 | Ladder mode: switch timer 1 / 2 | `Ctrl+Alt+F12` |
 | Expand / collapse by hotkey | `Ctrl+Alt+Up` |
+| Play / pause | `Ctrl+Alt+Down` |
+| Next / previous track | `Ctrl+Alt+Right` / `Ctrl+Alt+Left` |
 
 All hotkeys are defaults and can be changed in Settings → Hotkeys.
 
@@ -67,7 +70,7 @@ The hash must match the one in the release notes of the version you downloaded. 
 Current `IslandTimer.exe` SHA-256:
 
 ```
-949E0D1578120D806D63E8DC4274C2CC977404E13E9813ADFA28FB4D405971CB
+6EDD67112F2DE820A133EB30DCA4752B703BB9973B855EDF948A20456183B13D
 ```
 
 (The hash changes with every release; the release notes always list the current one.)
@@ -90,8 +93,6 @@ Thank you for your support!
 
 **Windows shows a SmartScreen warning.** The file is not signed: click *More info → Run anyway*. Some antivirus programs may flag the program because it listens to the keyboard globally for hotkeys and can add itself to startup. This is a false positive. If you don't trust the file, don't run it.
 
-**Notifications don't appear.** Allow access in Windows Settings → Privacy → Notifications, then turn on "Show notifications" in the program (it is off by default).
-
 **Where are my settings stored?** In `settings.ini` next to `IslandTimer.exe`.
 
 **How do I uninstall it?** Untick "Start with Windows" in Settings (if you enabled it), close the island (right-click → Close) and delete the folder.
@@ -100,9 +101,9 @@ Island Timer is an independent project and is not affiliated with, endorsed by o
 
 ## Русский
 
-**Island Timer**: небольшой плавающий «остров» для Windows 10/11 в верхней части экрана: часы, музыка с обложками, уведомления, GIF или фото на острове и секундомер с режимами **Solo timer** и **Ladder mode** (два таймера для игр 1 на 1, например Dead by Daylight). Не требует установки, почти не грузит систему, 11 языков.
+**Island Timer**: небольшой плавающий «остров» для Windows 10/11 в верхней части экрана: часы, музыка с обложками, GIF или фото на острове и секундомер с режимами **Solo timer** и **Ladder mode** (два таймера для игр 1 на 1, например Dead by Daylight). Не требует установки, почти не грузит систему, 11 языков.
 
-**Возможности:** компактные часы с раскрытием по наведению; музыка из системного плеера (браузер, Spotify, VLC и др., Telegram игнорируется); уведомления Windows (по умолчанию выключены); своя GIF или картинка на острове; два режима таймера; глобальные горячие клавиши, работающие и в играх; темы и свои цвета окна настроек, фон-картинка; встроенный видео-гайд с английскими субтитрами; проверка обновлений в «О программе» с проверкой SHA-256.
+**Возможности:** компактные часы с раскрытием по наведению; музыка из системного плеера (браузер, Spotify, VLC и др., Telegram игнорируется); своя GIF или картинка на острове; два режима таймера; глобальные горячие клавиши, работающие и в играх; темы и свои цвета окна настроек, фон-картинка; встроенный видео-гайд с английскими субтитрами; проверка обновлений в «О программе» с проверкой SHA-256.
 
 **Установка:** скачайте `Island-Timer-by-screw.zip` **только со страницы Releases этого репозитория**, распакуйте куда угодно (не в Program Files) и запустите `IslandTimer.exe`.
 
