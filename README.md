@@ -24,7 +24,7 @@ Made by **screw** · Discord: `screw_xgod`
 
 - **Clock pill.** A compact pill with the time. Hover it and it expands: big clock, date, battery and the track that is playing. You can drag it anywhere on the screen, resize it and change its color and opacity. Choose how it expands: on hover, with a delay, on click, or only by hotkey / from the tray. A game guard keeps it closed when you accidentally hover it while a fullscreen game is focused.
 - **Music.** Shows what is playing in the system media player (browsers such as YouTube, Spotify, VLC and other players): title, artist, cover, seek bar and play / pause / next / previous and a volume slider. Playback from Telegram is ignored on purpose.
-- **Live stream mode.** Optional: the collapsed island gets a bit bigger and shows the track title and artist under the timer.
+- **Always-on track title.** Optional (Settings → Music): the collapsed island gets a bit bigger and keeps the track title and artist under the timer.
 - **Fonts and colors.** Choose the font of the island, of the timer digits and of the settings window (or load your own .ttf / .otf file); set the island text color (the timer has its own colors) and turn on text glow for readability on photos.
 - **GIF or photo in the pill.** Put your own GIF or image on the collapsed island. Optional dimming while the timer is shown.
 - **Timers.**
@@ -72,7 +72,7 @@ The hash must match the one in the release notes of the version you downloaded. 
 Current `IslandTimer.exe` SHA-256:
 
 ```
-881D20C10F25A5D40415CB1D8663B3259E4F200E7BFE381B11DAACA6DC89C2A4
+208B99E628886524319CF29373B96BECA7303B9F5D38160A56E5EE8CFE291F17
 ```
 
 (The hash changes with every release; the release notes always list the current one.)
