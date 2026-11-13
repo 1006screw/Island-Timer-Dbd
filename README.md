@@ -49,15 +49,11 @@ Get `Island-Timer-by-screw.zip` **only from the Releases page of this repository
 | Expand / collapse | Hover the island (or click the tray icon) |
 | Open settings or close | Right-click the island or the tray icon |
 | Move the island | Drag it with the left mouse button (can be locked in Settings) |
-| Start / stop / reset the timer (works in Solo and Ladder mode) | `Ctrl+Alt+F9` |
-| Turn the timer off (show the clock again) | `Ctrl+Alt+F10` |
-| Reset the timer | `Ctrl+Alt+F11` |
-| Ladder mode: switch timer 1 / 2 | `Ctrl+Alt+F12` |
-| Expand / collapse by hotkey | `Ctrl+Alt+Up` |
-| Play / pause | `Ctrl+Alt+Down` |
-| Next / previous track | `Ctrl+Alt+Right` / `Ctrl+Alt+Left` |
+| Start / stop / reset the timer (works in Solo and Ladder mode) | `F1` |
 
-All hotkeys are defaults and can be changed in Settings → Hotkeys.
+Only the timer hotkey is set by default. All other actions (timer off / reset, switch timer 1 / 2, expand / collapse, play / pause, next / previous track) are not assigned: set them in Settings → Hotkeys. Gamepad buttons can be assigned there as well.
+
+Hotkeys can be changed in Settings → Hotkeys.
 
 ## Verify your download (important)
 
@@ -72,7 +68,7 @@ The hash must match the one in the release notes of the version you downloaded. 
 Current `IslandTimer.exe` SHA-256:
 
 ```
-237CD0E336759444C37B3D79A6E1E44BDF7BCB999685D2A495E23ADD41D106A9
+61D1D5B232FBF22A19677B5B1DBC1318C19CEAF6DA407CE38CA9C993B8399147
 ```
 
 (The hash changes with every release; the release notes always list the current one.)
