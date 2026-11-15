@@ -2,7 +2,7 @@
 
 A small floating "island" for Windows 10/11 that sits at the top of your screen: clock, music with covers, a GIF or photo in the pill, and a stopwatch with **Solo timer** and **Ladder mode** (two timers for 1 vs 1 games like Dead by Daylight).
 
-Portable, no installation, tiny (about 60 MB of RAM and almost no CPU while idle), 11 languages.
+Portable, no installation, tiny (about 90 MB of RAM and almost no CPU while idle), 11 languages.
 
 Made by **screw** · Discord: `screw_xgod`
 
@@ -23,14 +23,18 @@ Made by **screw** · Discord: `screw_xgod`
 ## Features
 
 - **Clock pill.** A compact pill with the time. Hover it and it expands: big clock, date, battery and the track that is playing. You can drag it anywhere on the screen, resize it and change its color and opacity. Choose how it expands: on hover, with a delay, on click, or only by hotkey / from the tray. A game guard keeps it closed when you accidentally hover it while a fullscreen game is focused.
-- **Music.** Shows what is playing in the system media player (browsers such as YouTube, Spotify, VLC and other players): title, artist, cover, seek bar and play / pause / next / previous and a volume slider. Playback from Telegram is ignored on purpose.
+- **Music.** Shows what is playing in the system media player (browsers such as YouTube, Spotify, VLC and other players): title, artist, cover, seek bar and play / pause / next / previous and a volume slider. Playback from Telegram, Twitch and Kick is ignored on purpose (Twitch and Kick are recognized by the browser tab title).
 - **Always-on track title.** Optional (Settings → Music): the collapsed island gets a bit bigger and keeps the track title and artist under the timer.
 - **Fonts and colors.** Choose the font of the island, of the timer digits and of the settings window (or load your own .ttf / .otf file); set the island text color (the timer has its own colors) and turn on text glow for readability on photos.
 - **GIF or photo in the pill.** Put your own GIF or image on the collapsed island. Optional dimming while the timer is shown.
 - **Timers.**
   - **Solo timer**: a regular stopwatch with start / stop / reset.
   - **Ladder mode**: two timers for a 1 vs 1 game (for example your chase time and your opponent's in Dead by Daylight). The selected timer is highlighted, each timer has its own color, and when a running timer gets within N seconds of the other one, its digits change color. A hotkey switches between timer 1 and 2, and "pass the turn" can start the next timer automatically.
-- **Global hotkeys.** Work in any window, including games. Single keys without Ctrl / Alt (like F9 or NumPad) are allowed, and the key still reaches the game by default.
+- **Global hotkeys.** Work in any window, including games. Single keys without Ctrl / Alt (like F9 or NumPad) are allowed, and the key still reaches the game by default. Mouse side buttons (Mouse 4 / Mouse 5) can be used as hotkeys too.
+- **Gamepad binds.** Assign a button or a combination on a PlayStation (DualShock 4 / DualSense, USB or Bluetooth) or Xbox-compatible gamepad to any action, including timer start / stop / reset. Works while another window is in focus.
+- **Clickthrough.** Optional (Settings → Timer): the island stays on top of the game and its hotkeys keep working, but the mouse ignores it. You can turn it off from the tray icon.
+- **Cover color.** Optional (Settings → Appearance): the expanded island takes a dark shade of the playing track's cover color.
+- **Ladder info (dbdleague).** Optional (Settings → Ladder info): shows your dbdleague 1v1 ladder stats on the island, in the expanded and optionally in the collapsed one: rank, points or ELO (alternating every 7 seconds), win rate, win streak, your last 10 matches and, during a match, your opponent and their rank ("vs Name #24"). The data is read from the public API of the SlugBot bot that runs the ladder, using your personal API key, which is stored encrypted on your PC. The program only reads data and never sends anything to Discord. It is not affiliated with DBDLeague or SlugBot. The tab needs a license key (Settings → About → License): a key is activated once and is tied to your computer. To buy a license, message screw_xgod on Discord.
 - **Settings window.** Themes (light, dark, AMOLED black, midnight, purple, or your own colors), background image or GIF, language, autostart with Windows, always on top, and more.
 - **Reset.** Settings -> General -> *Reset all settings* returns every option to its default (after a confirmation).
 - **Update history.** A small paper button in the settings window shows what changed in each version.
@@ -68,7 +72,7 @@ The hash must match the one in the release notes of the version you downloaded. 
 Current `IslandTimer.exe` SHA-256:
 
 ```
-61D1D5B232FBF22A19677B5B1DBC1318C19CEAF6DA407CE38CA9C993B8399147
+0C8533363BB1CDED494683CF6B94925DB2625BDAC74B21029E906064FC29418A
 ```
 
 (The hash changes with every release; the release notes always list the current one.)
@@ -101,7 +105,7 @@ Island Timer is an independent project and is not affiliated with, endorsed by o
 
 **Island Timer**: небольшой плавающий «остров» для Windows 10/11 в верхней части экрана: часы, музыка с обложками, GIF или фото на острове и секундомер с режимами **Solo timer** и **Ladder mode** (два таймера для игр 1 на 1, например Dead by Daylight). Не требует установки, почти не грузит систему, 11 языков.
 
-**Возможности:** компактные часы с раскрытием по наведению; музыка из системного плеера (браузер, Spotify, VLC и др., Telegram игнорируется); своя GIF или картинка на острове; два режима таймера; глобальные горячие клавиши, работающие и в играх; темы и свои цвета окна настроек, фон-картинка; встроенный видео-гайд с английскими субтитрами; проверка обновлений в «О программе» с проверкой SHA-256.
+**Возможности:** бинды на кнопки геймпада (PlayStation и Xbox) и на боковые кнопки мыши (Mouse 4 / Mouse 5); сквозной курсор; цвет раскрытого острова по обложке трека; необязательная вкладка Ladder info (нужен лицензионный ключ: Настройки → О программе; купить можно в Discord: screw_xgod) со статистикой вашего ладдера dbdleague (очки или ELO, винрейт, серия побед, последние 10 матчей, соперник), данные из публичного API бота SlugBot по вашему личному ключу, программа только читает данные; компактные часы с раскрытием по наведению; музыка из системного плеера (браузер, Spotify, VLC и др., Telegram, Twitch и Kick игнорируются); своя GIF или картинка на острове; два режима таймера; глобальные горячие клавиши, работающие и в играх; темы и свои цвета окна настроек, фон-картинка; встроенный видео-гайд с английскими субтитрами; проверка обновлений в «О программе» с проверкой SHA-256.
 
 **Установка:** скачайте `Island-Timer-by-screw.zip` **только со страницы Releases этого репозитория**, распакуйте куда угодно (не в Program Files) и запустите `IslandTimer.exe`.
 
