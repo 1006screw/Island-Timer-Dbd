@@ -34,7 +34,8 @@ Made by **screw** · Discord: `screw_xgod`
 - **Gamepad binds.** Assign a button or a combination on a PlayStation (DualShock 4 / DualSense, USB or Bluetooth) or Xbox-compatible gamepad to any action, including timer start / stop / reset. Works while another window is in focus.
 - **Clickthrough.** Optional (Settings → Timer): the island stays on top of the game and its hotkeys keep working, but the mouse ignores it. You can turn it off from the tray icon.
 - **Cover color.** Optional (Settings → Appearance): the expanded island takes a dark shade of the playing track's cover color.
-- **Ladder info (dbdleague).** Optional (Settings → Ladder info): shows your dbdleague 1v1 ladder stats on the island, in the expanded and optionally in the collapsed one: rank, points or ELO (alternating every 7 seconds), win rate, win streak, your last 10 matches and, during a match, your opponent and their rank ("vs Name #24"). The data is read from the public API of the SlugBot bot that runs the ladder, using your personal API key, which is stored encrypted on your PC. The program only reads data and never sends anything to Discord. It is not affiliated with DBDLeague or SlugBot. The tab needs a license key (Settings → About → License): a key is activated once and is tied to your computer. To buy a license, message screw_xgod on Discord.
+- **Ladder info (dbdleague).** Optional (Settings → Ladder info): shows your dbdleague 1v1 ladder stats on the island, in the expanded and optionally in the collapsed one: rank, points or ELO (alternating every 7 seconds), win rate, win streak, your last 10 matches and, during a match, your opponent and their rank ("vs Name #24"). The data is read from the public API of the SlugBot bot that runs the ladder, using your personal API key, which is stored encrypted on your PC. The program only reads data and never sends anything to Discord. It is not affiliated with DBDLeague or SlugBot. The collapsed island shows a short line: nickname, place and the last 5 results. The tab needs a license key (Settings → About → License): a key is activated once and is tied to your computer. To buy a license, message screw_xgod on Discord.
+- **Always expanded.** Optional (Settings → Placement): the island stays expanded and does not collapse when the mouse leaves it.
 - **Settings window.** Themes (light, dark, AMOLED black, midnight, purple, or your own colors), background image or GIF, language, autostart with Windows, always on top, and more.
 - **Reset.** Settings -> General -> *Reset all settings* returns every option to its default (after a confirmation).
 - **Update history.** A small paper button in the settings window shows what changed in each version.
@@ -72,7 +73,7 @@ The hash must match the one in the release notes of the version you downloaded. 
 Current `IslandTimer.exe` SHA-256:
 
 ```
-0C8533363BB1CDED494683CF6B94925DB2625BDAC74B21029E906064FC29418A
+3469876BDA7006CB9A848C7BE3D7DECD4C01CFC59E25AE73F150E19869B568D5
 ```
 
 (The hash changes with every release; the release notes always list the current one.)
@@ -105,7 +106,7 @@ Island Timer is an independent project and is not affiliated with, endorsed by o
 
 **Island Timer**: небольшой плавающий «остров» для Windows 10/11 в верхней части экрана: часы, музыка с обложками, GIF или фото на острове и секундомер с режимами **Solo timer** и **Ladder mode** (два таймера для игр 1 на 1, например Dead by Daylight). Не требует установки, почти не грузит систему, 11 языков.
 
-**Возможности:** бинды на кнопки геймпада (PlayStation и Xbox) и на боковые кнопки мыши (Mouse 4 / Mouse 5); сквозной курсор; цвет раскрытого острова по обложке трека; необязательная вкладка Ladder info (нужен лицензионный ключ: Настройки → О программе; купить можно в Discord: screw_xgod) со статистикой вашего ладдера dbdleague (очки или ELO, винрейт, серия побед, последние 10 матчей, соперник), данные из публичного API бота SlugBot по вашему личному ключу, программа только читает данные; компактные часы с раскрытием по наведению; музыка из системного плеера (браузер, Spotify, VLC и др., Telegram, Twitch и Kick игнорируются); своя GIF или картинка на острове; два режима таймера; глобальные горячие клавиши, работающие и в играх; темы и свои цвета окна настроек, фон-картинка; встроенный видео-гайд с английскими субтитрами; проверка обновлений в «О программе» с проверкой SHA-256.
+**Возможности:** бинды на кнопки геймпада (PlayStation и Xbox) и на боковые кнопки мыши (Mouse 4 / Mouse 5); сквозной курсор; опция «Всегда держать остров раскрытым»; цвет раскрытого острова по обложке трека; необязательная вкладка Ladder info (нужен лицензионный ключ: Настройки → О программе; купить можно в Discord: screw_xgod) со статистикой вашего ладдера dbdleague (очки или ELO, винрейт, серия побед, последние 10 матчей, соперник), данные из публичного API бота SlugBot по вашему личному ключу, программа только читает данные; компактные часы с раскрытием по наведению; музыка из системного плеера (браузер, Spotify, VLC и др., Telegram, Twitch и Kick игнорируются); своя GIF или картинка на острове; два режима таймера; глобальные горячие клавиши, работающие и в играх; темы и свои цвета окна настроек, фон-картинка; встроенный видео-гайд с английскими субтитрами; проверка обновлений в «О программе» с проверкой SHA-256.
 
 **Установка:** скачайте `Island-Timer-by-screw.zip` **только со страницы Releases этого репозитория**, распакуйте куда угодно (не в Program Files) и запустите `IslandTimer.exe`.
 
