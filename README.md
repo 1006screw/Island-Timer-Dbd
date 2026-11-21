@@ -1,113 +1,45 @@
-# Island Timer
+# Entity Island — FREE EDITION
 
-A small floating "island" for Windows 10/11 that sits at the top of your screen: clock, music with covers, a GIF or photo in the pill, and a stopwatch with **Solo timer** and **Ladder mode** (two timers for 1 vs 1 games like Dead by Daylight).
+Оверлей-«остров» для Dead by Daylight: компактная панель поверх игры с таймером матча, управлением музыкой, картой, прицелом и генератором сборок. Бесплатная редакция работает без регистрации, лицензии и аккаунта.
 
-Portable, no installation, tiny (about 90 MB of RAM and almost no CPU while idle), 11 languages.
+> Версия **2.0.0** · Windows 10/11 · .NET Framework 4 (входит в Windows) · установщик ~56 МБ
 
-Made by **screw** · Discord: `screw_xgod`
+## Установка
+1. Скачайте `Entity-Island-Free-2.0.0.zip` и распакуйте его.
+2. Запустите `IslandTimer.exe` из архива — это установщик Entity Island Free (имя оставлено для автообновления старых версий).
+3. Выберите папку, ярлыки и автозапуск, нажмите «Установить». Программа ставится в профиль пользователя, создаётся деинсталлятор.
+4. Запустите Entity Island. Настройки — в меню иконки в трее («Настройки…»).
 
-> Source code is **not** published. Only the compiled program is available in [Releases](../../releases). See [LICENSE](LICENSE).
+Если стоит Island Timer 1.3.0 — запустите установщик поверх. Старый `IslandTimer.exe` заменится на `EntityIsland.exe`, настройки сохранятся.
 
-## Screenshots
-
-| Collapsed island with a GIF / photo | Expanded island with music |
+## Что входит в бесплатную редакцию
+| Раздел | Возможности |
 |---|---|
-| ![Collapsed island with a GIF](screenshot-collapsed-gif.png) | ![Expanded island with music](screenshot-expanded-music.png) |
+| **Остров** | Таймер матча, режим Ladder (первый цвет — акцент, таймеры «Идёт» и «Остановлен»), темы, цвет акцента (по умолчанию цвет логотипа), GIF острова, обрезка фона |
+| **Прицел** | Шесть стилей, цвет, размер, показ только при зажатой правой кнопке мыши |
+| **Карта** | Схемы карт с разметкой по часам, автоопределение по экрану загрузки, ручной выбор, бинд «Карта: не выбрана» |
+| **Сборка билдов** | Пять игроков, портреты, перки, предметы, дополнения, подношения; проверка по правилам Balanced by Daylight; перетаскивание ячеек; режим «Без дубликатов» (включён по умолчанию); сохранение билдов; снимок PNG и копирование в буфер |
+| **Рандомайзеры** | Перков и убийц, история бросков и список исключений |
+| **Оверлей 1vs1** | Стили «Дуэль» (по умолчанию) и «Карточка», логотип Entity |
+| **Бинды** | Управление воспроизведением и перемотка, горячие клавиши острова |
+| **Общее** | 11 языков (ru, en, fr, pt, es, ar, zh, de, sr, ko, ja), автозапуск, захват в OBS через «Захват окна», сниженная нагрузка на процессор и память |
 
-| Timer in a game | Timer moved to the corner |
-|---|---|
-| ![Timer in a game](screenshot-timer-in-game.png) | ![Timer in the corner of the screen](screenshot-timer-corner.png) |
+## Что только в полной редакции
+Эти разделы видны в бесплатной версии под жёлтым замком, но их код в сборку не входит:
+- Ladder info (статистика dbdleague 1vs1)
+- Оверлеи для стрима: табло очков турнира, оверлей матча, 1vs1 турнир, счётчик стриков, оверлей перков, оверлей трека
+- Таймеры перков 1vs1 и 1vs4, таймер способностей убийц с автоопределением убийцы по Tab
+- Перки тиммейтов по экрану Tab (для комментаторов — всех четырёх выживших)
+- Единый стиль вкладок, скрытие логотипа EntityIsland на оверлеях
 
-![Timer settings](screenshot-settings-timer.png)
+Лицензия активируется в «О программе» полной редакции, привязывается к одному компьютеру и проверяется без интернета. Настройки Free и Full совместимы.
 
-## Features
+## Частые вопросы
+- **SmartScreen предупреждает.** Файл не подписан цифровой подписью: «Подробнее → Выполнить в любом случае».
+- **Антивирус реагирует на оверлей.** Программа рисует окно поверх игры и читает горячие клавиши; добавьте папку в исключения.
+- **Остров не виден в игре.** Запускайте Dead by Daylight в режиме «Окно без рамки».
+- **Как закрыть полностью.** Иконка в трее → «Выход» (процесс завершается).
+- **Как скрыть остров.** Иконка в трее → «Скрыть остров» / «Показать остров».
 
-- **Clock pill.** A compact pill with the time. Hover it and it expands: big clock, date, battery and the track that is playing. You can drag it anywhere on the screen, resize it and change its color and opacity. Choose how it expands: on hover, with a delay, on click, or only by hotkey / from the tray. A game guard keeps it closed when you accidentally hover it while a fullscreen game is focused.
-- **Music.** Shows what is playing in the system media player (browsers such as YouTube, Spotify, VLC and other players): title, artist, cover, seek bar and play / pause / next / previous and a volume slider. Playback from Telegram, Twitch and Kick is ignored on purpose (Twitch and Kick are recognized by the browser tab title).
-- **Always-on track title.** Optional (Settings → Music): the collapsed island gets a bit bigger and keeps the track title and artist under the timer.
-- **Fonts and colors.** Choose the font of the island, of the timer digits and of the settings window (or load your own .ttf / .otf file); set the island text color (the timer has its own colors) and turn on text glow for readability on photos.
-- **GIF or photo in the pill.** Put your own GIF or image on the collapsed island. Optional dimming while the timer is shown.
-- **Timers.**
-  - **Solo timer**: a regular stopwatch with start / stop / reset.
-  - **Ladder mode**: two timers for a 1 vs 1 game (for example your chase time and your opponent's in Dead by Daylight). The selected timer is highlighted, each timer has its own color, and when a running timer gets within N seconds of the other one, its digits change color. A hotkey switches between timer 1 and 2, and "pass the turn" can start the next timer automatically.
-- **Global hotkeys.** Work in any window, including games. Single keys without Ctrl / Alt (like F9 or NumPad) are allowed, and the key still reaches the game by default. Mouse side buttons (Mouse 4 / Mouse 5) can be used as hotkeys too.
-- **Gamepad binds.** Assign a button or a combination on a PlayStation (DualShock 4 / DualSense, USB or Bluetooth) or Xbox-compatible gamepad to any action, including timer start / stop / reset. Works while another window is in focus.
-- **Clickthrough.** Optional (Settings → Timer): the island stays on top of the game and its hotkeys keep working, but the mouse ignores it. You can turn it off from the tray icon.
-- **Cover color.** Optional (Settings → Appearance): the expanded island takes a dark shade of the playing track's cover color.
-- **Ladder info (dbdleague).** Optional (Settings → Ladder info): shows your dbdleague 1v1 ladder stats on the island, in the expanded and optionally in the collapsed one: rank, points or ELO (alternating every 7 seconds), win rate, win streak, your last 10 matches and, during a match, your opponent and their rank ("vs Name #24"). The data is read from the public API of the SlugBot bot that runs the ladder, using your personal API key, which is stored encrypted on your PC. The program only reads data and never sends anything to Discord. It is not affiliated with DBDLeague or SlugBot. The collapsed island shows a short line: nickname, place and the last 5 results. The tab needs a license key (Settings → About → License): a key is activated once and is tied to your computer. To buy a license, message screw_xgod on Discord.
-- **Always expanded.** Optional (Settings → Placement): the island stays expanded and does not collapse when the mouse leaves it.
-- **Settings window.** Themes (light, dark, AMOLED black, midnight, purple, or your own colors), background image or GIF, language, autostart with Windows, always on top, and more.
-- **Reset.** Settings -> General -> *Reset all settings* returns every option to its default (after a confirmation).
-- **Update history.** A small paper button in the settings window shows what changed in each version.
-- **Built-in video guide** with English subtitles (Settings → Guide). It is shown automatically on the very first launch as a ▶ button on the island.
-- **Updates.** Settings → About → *Check for updates*. The program only downloads releases from this repository and checks their SHA-256 before installing.
-- **Languages:** English, Français, Português, Русский, Español, العربية, 中文, Deutsch, Srpski, 한국어, 日本語.
-
-## Download
-
-Get `Island-Timer-by-screw.zip` **only from the Releases page of this repository**. Unzip it anywhere you can save files (not Program Files) and run `IslandTimer.exe`. The island appears at the top center of the screen and an icon appears in the tray.
-
-## Quick start
-
-| Action | How |
-|--------|-----|
-| Expand / collapse | Hover the island (or click the tray icon) |
-| Open settings or close | Right-click the island or the tray icon |
-| Move the island | Drag it with the left mouse button (can be locked in Settings) |
-| Start / stop / reset the timer (works in Solo and Ladder mode) | `F1` |
-
-Only the timer hotkey is set by default. All other actions (timer off / reset, switch timer 1 / 2, expand / collapse, play / pause, next / previous track) are not assigned: set them in Settings → Hotkeys. Gamepad buttons can be assigned there as well.
-
-Hotkeys can be changed in Settings → Hotkeys.
-
-## Verify your download (important)
-
-Copies of this program from other places may have been modified, for example to replace the donation wallets. Check the file before running it:
-
-```powershell
-Get-FileHash .\IslandTimer.exe -Algorithm SHA256
-```
-
-The hash must match the one in the release notes of the version you downloaded. If it does not, delete the file and download it again from here.
-
-Current `IslandTimer.exe` SHA-256:
-
-```
-3469876BDA7006CB9A848C7BE3D7DECD4C01CFC59E25AE73F150E19869B568D5
-```
-
-(The hash changes with every release; the release notes always list the current one.)
-
-## Official donation addresses
-
-These are the only addresses of the author. They are also shown in the program under **About**. If the addresses in your copy are different, it is **not** the original program.
-
-| Coin | Address |
-|------|---------|
-| USDT (TRC20) | `TRpt62hJHPPNQbxWnJnkwK5GXVgotKupTQ` |
-| BTC | `bc1q4uar8agw72tjct87zvpryaeuq6xyrwqv05ayn0` |
-| DonationAlerts | https://www.donationalerts.com/r/screw__ |
-
-Thank you for your support!
-
-## FAQ
-
-**Hotkeys don't work in a game.** If the game (or any window) runs as administrator, Windows does not pass key presses to a normal program. Run `IslandTimer.exe` as administrator too (right-click → Run as administrator).
-
-**Windows shows a SmartScreen warning.** The file is not signed: click *More info → Run anyway*. Some antivirus programs may flag the program because it listens to the keyboard globally for hotkeys and can add itself to startup. This is a false positive. If you don't trust the file, don't run it.
-
-**Where are my settings stored?** In `settings.ini` next to `IslandTimer.exe`.
-
-**How do I uninstall it?** Untick "Start with Windows" in Settings (if you enabled it), close the island (right-click → Close) and delete the folder.
-
-Island Timer is an independent project and is not affiliated with, endorsed by or sponsored by Apple Inc.
-
-## Русский
-
-**Island Timer**: небольшой плавающий «остров» для Windows 10/11 в верхней части экрана: часы, музыка с обложками, GIF или фото на острове и секундомер с режимами **Solo timer** и **Ladder mode** (два таймера для игр 1 на 1, например Dead by Daylight). Не требует установки, почти не грузит систему, 11 языков.
-
-**Возможности:** бинды на кнопки геймпада (PlayStation и Xbox) и на боковые кнопки мыши (Mouse 4 / Mouse 5); сквозной курсор; опция «Всегда держать остров раскрытым»; цвет раскрытого острова по обложке трека; необязательная вкладка Ladder info (нужен лицензионный ключ: Настройки → О программе; купить можно в Discord: screw_xgod) со статистикой вашего ладдера dbdleague (очки или ELO, винрейт, серия побед, последние 10 матчей, соперник), данные из публичного API бота SlugBot по вашему личному ключу, программа только читает данные; компактные часы с раскрытием по наведению; музыка из системного плеера (браузер, Spotify, VLC и др., Telegram, Twitch и Kick игнорируются); своя GIF или картинка на острове; два режима таймера; глобальные горячие клавиши, работающие и в играх; темы и свои цвета окна настроек, фон-картинка; встроенный видео-гайд с английскими субтитрами; проверка обновлений в «О программе» с проверкой SHA-256.
-
-**Установка:** скачайте `Island-Timer-by-screw.zip` **только со страницы Releases этого репозитория**, распакуйте куда угодно (не в Program Files) и запустите `IslandTimer.exe`.
-
-Исходный код не публикуется, в Releases лежит только готовая программа. Проверяйте хэш SHA-256 (см. выше). Адреса для донатов выше единственные настоящие; если в вашей копии программы в разделе «О программе» другие адреса, это подделка.
+## Удаление
+«Параметры Windows → Приложения → Entity Island» или повторный запуск установщика.
